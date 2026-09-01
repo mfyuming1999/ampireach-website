@@ -6,24 +6,32 @@
 
   <title>AMPI | Air Column Packaging Solutions</title>
 
-  <meta name="description" content="AMPI provides reliable air column packaging solutions for bottles, electronics, glass products and other fragile goods. Flexible customization, stable quality and practical protection.">
-
-  <meta name="keywords" content="air column packaging, air column bag, inflatable packaging, protective packaging, bottle packaging, wine bottle packaging">
+  <meta name="description" content="AMPI provides air column packaging solutions for wine bottles, electronics and other fragile products, with flexible protection and customization.">
 
   <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://www.ampireach.com/">
+  <link rel="canonical" href="https://ampireach.com/">
 
   <meta property="og:title" content="AMPI | Air Column Packaging Solutions">
-  <meta property="og:description" content="Reliable and flexible air column packaging solutions for fragile products.">
+  <meta property="og:description" content="Protective packaging solutions for wine bottles, electronics and other fragile products.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.ampireach.com/">
+  <meta property="og:url" content="https://ampireach.com/">
+  <meta property="og:image" content="https://ampireach.com/wine-bottle-air-column-packaging.jpg">
 
   <style>
+    :root {
+      --navy: #18243b;
+      --orange: #c47b3f;
+      --text: #18243b;
+      --muted: #68717e;
+      --light: #f3f3f0;
+      --line: #deded9;
+      --white: #ffffff;
+    }
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -32,383 +40,438 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #18243b;
-      background: #ffffff;
+      color: var(--text);
+      background: var(--white);
       line-height: 1.6;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
 
     img {
-      max-width: 100%;
       display: block;
+      max-width: 100%;
     }
 
     .container {
       width: min(1180px, 92%);
-      margin: 0 auto;
+      margin: auto;
     }
 
-    /* Header */
+    /* =====================
+       HEADER
+    ===================== */
 
     header {
-      border-bottom: 1px solid #e8e8e8;
-      background: #ffffff;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
     .nav {
-      height: 76px;
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 30px;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 25px;
-      font-weight: 700;
-      letter-spacing: 5px;
-    }
-
-    .logo-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 9px;
-      background: #18243b;
-      position: relative;
-    }
-
-    .logo-mark::after {
-      content: "";
-      position: absolute;
-      width: 11px;
-      height: 11px;
-      background: #c97b3c;
-      right: -4px;
-      bottom: -3px;
-      border-radius: 3px;
-      transform: rotate(45deg);
+    .logo img {
+      width: 125px;
+      height: auto;
     }
 
     .nav-links {
       display: flex;
-      gap: 34px;
+      align-items: center;
+      gap: 30px;
       font-size: 14px;
       font-weight: 600;
     }
 
     .nav-links a:hover {
-      color: #c97b3c;
+      color: var(--orange);
     }
 
-    .nav-button {
+    .nav-cta {
+      background: var(--navy);
+      color: var(--white);
       padding: 11px 20px;
-      border-radius: 5px;
-      background: #18243b;
-      color: white;
+      border-radius: 4px;
     }
 
-    .nav-button:hover {
-      background: #c97b3c;
-      color: white !important;
+    .nav-cta:hover {
+      background: var(--orange);
+      color: var(--white) !important;
     }
 
-    /* Hero */
+    /* =====================
+       HERO
+    ===================== */
 
     .hero {
-      min-height: 680px;
+      min-height: calc(100vh - 78px);
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: .92fr 1.08fr;
       align-items: center;
-      gap: 70px;
-      padding: 80px 0;
+      gap: 65px;
+      padding: 70px 0 85px;
     }
 
     .eyebrow {
-      font-size: 13px;
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #c97b3c;
-      font-weight: 700;
       margin-bottom: 22px;
     }
 
-    h1 {
+    .hero h1 {
       font-size: clamp(48px, 6vw, 78px);
-      line-height: 0.98;
+      line-height: .98;
       letter-spacing: -4px;
       margin-bottom: 28px;
     }
 
-    .hero-text {
-      max-width: 550px;
-      color: #596274;
+    .hero-copy {
+      max-width: 540px;
+      color: var(--muted);
       font-size: 18px;
+      line-height: 1.75;
       margin-bottom: 34px;
     }
 
     .hero-buttons {
       display: flex;
-      gap: 14px;
+      gap: 13px;
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 24px;
-      border-radius: 5px;
-      font-weight: 700;
+      padding: 14px 23px;
+      border-radius: 4px;
       font-size: 14px;
+      font-weight: 700;
     }
 
     .button-primary {
-      background: #18243b;
-      color: white;
+      background: var(--navy);
+      color: var(--white);
     }
 
     .button-primary:hover {
-      background: #c97b3c;
+      background: var(--orange);
     }
 
     .button-secondary {
-      border: 1px solid #18243b;
+      border: 1px solid var(--navy);
     }
 
     .button-secondary:hover {
-      background: #18243b;
-      color: white;
+      background: var(--navy);
+      color: var(--white);
     }
 
-    .hero-image {
-      height: 570px;
-      border-radius: 0 130px 0 0;
+    .hero-visual {
+      height: 620px;
       overflow: hidden;
-      background:
-        linear-gradient(135deg, rgba(24,36,59,.05), rgba(201,123,60,.12)),
-        #f1f1ef;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 0 125px 0 0;
+      background: var(--light);
       position: relative;
     }
 
-.hero-product-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  transform: scale(1.25);
-}
-
-.product-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
-}
-
-    .air-bag {
-      width: 55%;
-      height: 76%;
-      border: 2px solid rgba(180,190,195,.75);
-      border-radius: 14px;
-      position: relative;
-      background: rgba(255,255,255,.35);
-      box-shadow: inset 0 0 30px rgba(160,170,175,.18);
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
 
-    .air-bag::before {
-      content: "";
+    .hero-caption {
       position: absolute;
-      inset: 0;
-      background:
-        repeating-linear-gradient(
-          90deg,
-          transparent 0,
-          transparent 17%,
-          rgba(150,160,165,.35) 18%,
-          transparent 19%
-        );
-      border-radius: inherit;
-    }
-
-    .hero-label {
-      position: absolute;
-      bottom: 28px;
-      left: 28px;
-      background: white;
-      padding: 15px 20px;
-      font-size: 13px;
+      left: 24px;
+      bottom: 24px;
+      background: rgba(255,255,255,.94);
+      padding: 13px 17px;
+      font-size: 12px;
       font-weight: 700;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
     }
 
-    /* Intro */
+    /* =====================
+       ABOUT
+    ===================== */
 
-    .intro {
-      padding: 100px 0;
-      background: #f7f7f5;
+    .about {
+      background: var(--light);
+      padding: 105px 0;
     }
 
-    .section-grid {
+    .two-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
+      gap: 90px;
     }
 
-    .section-number {
-      font-size: 13px;
-      color: #c97b3c;
+    .section-label {
+      color: var(--orange);
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 2.5px;
       margin-bottom: 18px;
     }
 
     h2 {
-      font-size: clamp(40px, 5vw, 62px);
+      font-size: clamp(38px, 5vw, 60px);
       line-height: 1;
       letter-spacing: -3px;
-      margin-bottom: 25px;
     }
 
-    .section-text {
-      color: #626b78;
+    .about-text {
+      padding-top: 35px;
+      color: var(--muted);
       font-size: 17px;
-      max-width: 570px;
+      line-height: 1.8;
     }
 
-    /* Applications */
+    /* =====================
+       APPLICATIONS
+    ===================== */
 
     .applications {
       padding: 110px 0;
     }
 
-    .section-heading {
+    .section-top {
       display: flex;
-      justify-content: space-between;
       align-items: end;
-      gap: 30px;
-      margin-bottom: 50px;
+      justify-content: space-between;
+      gap: 50px;
+      margin-bottom: 55px;
     }
 
-    .section-heading p {
+    .section-description {
       max-width: 480px;
-      color: #687080;
+      color: var(--muted);
+      font-size: 16px;
     }
 
-    .cards {
+    .application-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .card {
+    .application-card {
       min-height: 300px;
+      background: var(--light);
       padding: 28px;
-      background: #f5f5f3;
-      border-radius: 8px;
       display: flex;
       flex-direction: column;
       justify-content: end;
-      transition: transform .25s ease;
+      position: relative;
+      overflow: hidden;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
+    .application-number {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: #9da2a8;
+      font-size: 12px;
+      font-weight: 700;
     }
 
-    .card-icon {
-      font-size: 38px;
-      margin-bottom: auto;
+    .application-card h3 {
+      font-size: 25px;
+      margin-bottom: 9px;
     }
 
-    .card h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #697181;
+    .application-card p {
+      color: var(--muted);
       font-size: 14px;
     }
 
-    /* Why AMPI */
+    /* =====================
+       PRODUCTS
+    ===================== */
+
+    .products {
+      background: var(--navy);
+      color: var(--white);
+      padding: 110px 0;
+    }
+
+    .products-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: end;
+      margin-bottom: 60px;
+    }
+
+    .products .section-label {
+      color: #d58b51;
+    }
+
+    .products-description {
+      color: #c5ccd6;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .product-list {
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    .product-item {
+      display: grid;
+      grid-template-columns: 60px 1fr 190px;
+      gap: 25px;
+      align-items: center;
+      padding: 25px 0;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    .product-number {
+      color: #d58b51;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .product-item h3 {
+      font-size: 21px;
+    }
+
+    .product-item p {
+      color: #bfc6d1;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .product-link {
+      justify-self: end;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .product-link:hover {
+      color: #d58b51;
+    }
+
+    /* =====================
+       WHY AMPI
+    ===================== */
 
     .why {
       padding: 110px 0;
-      background: #18243b;
-      color: white;
-    }
-
-    .why .section-number {
-      color: #d88b4a;
-    }
-
-    .why .section-text {
-      color: #c9ced7;
     }
 
     .features {
       margin-top: 65px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 35px;
+      gap: 28px;
     }
 
     .feature {
-      border-top: 1px solid rgba(255,255,255,.2);
-      padding-top: 25px;
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
     }
 
     .feature-number {
-      color: #d88b4a;
-      font-size: 14px;
+      color: var(--orange);
+      font-size: 12px;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
     .feature h3 {
       font-size: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .feature p {
-      color: #c9ced7;
+      color: var(--muted);
       font-size: 14px;
     }
 
-    /* CTA */
+    /* =====================
+       MANUFACTURING
+    ===================== */
+
+    .manufacturing {
+      background: var(--light);
+      padding: 110px 0;
+    }
+
+    .manufacturing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .manufacturing-placeholder {
+      min-height: 400px;
+      background: #e9e9e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .manufacturing-placeholder strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .manufacturing-placeholder p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .manufacturing-text p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-top: 28px;
+    }
+
+    /* =====================
+       CTA
+    ===================== */
 
     .cta {
-      padding: 110px 0;
+      padding: 120px 0;
       text-align: center;
     }
 
     .cta h2 {
-      max-width: 780px;
-      margin: 0 auto 25px;
+      max-width: 800px;
+      margin: auto;
     }
 
     .cta p {
-      max-width: 600px;
-      margin: 0 auto 35px;
-      color: #687080;
+      max-width: 620px;
+      margin: 25px auto 35px;
+      color: var(--muted);
     }
 
-    /* Footer */
+    /* =====================
+       FOOTER
+    ===================== */
 
     footer {
-      background: #f5f5f3;
-      padding: 55px 0 30px;
+      background: var(--light);
+      padding: 55px 0 28px;
     }
 
     .footer-grid {
@@ -416,37 +479,49 @@
       grid-template-columns: 2fr 1fr 1fr;
       gap: 50px;
       padding-bottom: 45px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .footer-logo img {
+      width: 115px;
+    }
+
+    .footer-description {
+      max-width: 420px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 18px;
     }
 
     .footer-title {
+      font-size: 14px;
       font-weight: 700;
       margin-bottom: 15px;
-    }
-
-    .footer-text {
-      max-width: 420px;
-      color: #697181;
-      font-size: 14px;
     }
 
     .footer-links {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      color: #697181;
+      gap: 9px;
+      color: var(--muted);
       font-size: 14px;
     }
 
+    .footer-links a:hover {
+      color: var(--orange);
+    }
+
     .copyright {
-      padding-top: 25px;
-      color: #858b96;
+      padding-top: 24px;
+      color: #858b95;
       font-size: 12px;
     }
 
-    /* Mobile */
+    /* =====================
+       MOBILE
+    ===================== */
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
 
       .nav-links {
         display: none;
@@ -454,19 +529,21 @@
 
       .hero {
         grid-template-columns: 1fr;
-        padding: 60px 0;
+        gap: 45px;
       }
 
-      .hero-image {
-        height: 450px;
+      .hero-visual {
+        height: 520px;
       }
 
-      .section-grid {
+      .two-column,
+      .products-intro,
+      .manufacturing-grid {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 40px;
       }
 
-      .cards {
+      .application-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -475,13 +552,17 @@
       }
 
       .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 560px) {
 
-      h1 {
+      .hero {
+        padding: 50px 0 65px;
+      }
+
+      .hero h1 {
         letter-spacing: -2px;
       }
 
@@ -489,9 +570,32 @@
         letter-spacing: -2px;
       }
 
-      .cards,
-      .features {
+      .hero-visual {
+        height: 430px;
+        border-radius: 0 80px 0 0;
+      }
+
+      .application-grid,
+      .features,
+      .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      .section-top {
+        display: block;
+      }
+
+      .section-description {
+        margin-top: 25px;
+      }
+
+      .product-item {
+        grid-template-columns: 45px 1fr;
+      }
+
+      .product-link {
+        grid-column: 2;
+        justify-self: start;
       }
 
       .hero-buttons {
@@ -502,6 +606,7 @@
         text-align: center;
       }
     }
+
   </style>
 </head>
 
@@ -511,15 +616,16 @@
   <div class="container nav">
 
     <a href="/" class="logo">
-      <span class="logo-mark"></span>
-      <span>AMPI</span>
+      <img src="ampi-logo.png" alt="AMPI">
     </a>
 
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#applications">Applications</a>
+      <a href="#products">Products</a>
       <a href="#why-ampi">Why AMPI</a>
-      <a href="#contact" class="nav-button">Contact</a>
+      <a href="#manufacturing">Manufacturing</a>
+      <a href="#contact" class="nav-cta">Get a Quote</a>
     </nav>
 
   </div>
@@ -533,75 +639,98 @@
   <section class="container hero">
 
     <div>
-      <div class="eyebrow">Air Column Packaging Solutions</div>
+
+      <div class="eyebrow">
+        Air Column Packaging Solutions
+      </div>
 
       <h1>
-        Protect<br>
-        What<br>
-        Matters.
+        Protecting Products<br>
+        Through Every Journey.
       </h1>
 
-      <p class="hero-text">
-        Reliable air column packaging solutions designed to protect
-        fragile products during storage, handling and transportation.
+      <p class="hero-copy">
+        Reliable protective packaging for wine bottles,
+        electronics and other fragile products.
+        Flexible solutions designed around your product
+        and shipping requirements.
       </p>
 
       <div class="hero-buttons">
-        <a href="#applications" class="button button-primary">
-          Explore Solutions
+
+        <a href="#products" class="button button-primary">
+          Explore Products
         </a>
 
         <a href="#contact" class="button button-secondary">
-          Contact AMPI
+          Get a Quote
         </a>
+
       </div>
+
     </div>
 
 
-<div class="hero-image">
+    <div class="hero-visual">
 
-  <img
-    class="hero-product-image"
-    src="wine-bottle-air-column-packaging.jpg"
-    alt="AMPI Air Column Packaging for Wine Bottles"
-  >
+      <img
+        src="wine-bottle-air-column-packaging.jpg"
+        alt="Wine bottle protected with air column packaging"
+      >
 
-  <div class="hero-label">
-    Flexible Protection · Practical Packaging
-  </div>
+      <div class="hero-caption">
+        Wine Bottle Protection · AMPI
+      </div>
 
-</div>
+    </div>
 
   </section>
 
 
   <!-- ABOUT -->
 
-  <section class="intro" id="about">
+  <section class="about" id="about">
 
-    <div class="container section-grid">
+    <div class="container two-column">
 
       <div>
-        <div class="section-number">01 / ABOUT AMPI</div>
+
+        <div class="section-label">
+          01 / ABOUT AMPI
+        </div>
 
         <h2>
           Packaging<br>
           Built Around<br>
           Protection.
         </h2>
+
       </div>
 
-      <div>
-        <p class="section-text">
-          At AMPI, we focus on providing reliable air column packaging
-          solutions for fragile products. Our approach combines flexible
-          customization, stable production and practical packaging design
-          to help customers reduce product damage during transportation.
-          <br><br>
-          From individual product protection to larger packaging projects,
-          we work with customers to develop solutions that fit their
-          products, packaging process and market requirements.
+      <div class="about-text">
+
+        <p>
+          AMPI focuses on practical protective packaging
+          solutions for fragile products.
         </p>
+
+        <br>
+
+        <p>
+          Our approach combines flexible customization,
+          stable production and practical packaging design
+          to help customers reduce product damage during
+          storage, handling and transportation.
+        </p>
+
+        <br>
+
+        <p>
+          We work with customers to develop packaging
+          solutions based on product dimensions, protection
+          requirements and shipping conditions.
+        </p>
+
       </div>
 
     </div>
@@ -615,64 +744,188 @@
 
     <div class="container">
 
-      <div class="section-heading">
+      <div class="section-top">
 
         <div>
-          <div class="section-number">02 / APPLICATIONS</div>
+
+          <div class="section-label">
+            02 / APPLICATIONS
+          </div>
 
           <h2>
             Protection<br>
             For Different Products.
           </h2>
+
         </div>
 
-        <p>
-          Air column packaging provides lightweight cushioning protection
-          for a wide range of fragile and impact-sensitive products.
+        <p class="section-description">
+          Air column packaging provides lightweight
+          cushioning protection for a wide range of
+          fragile and impact-sensitive products.
         </p>
 
       </div>
 
 
-      <div class="cards">
+      <div class="application-grid">
 
-        <div class="card">
-          <div class="card-icon">🍷</div>
+        <article class="application-card">
+
+          <span class="application-number">01</span>
+
           <h3>Wine & Bottles</h3>
+
           <p>
-            Protective packaging for wine bottles, spirits,
-            glass bottles and other cylindrical products.
+            Protective packaging for wine bottles,
+            spirits, glass bottles and other cylindrical
+            products.
           </p>
-        </div>
+
+        </article>
 
 
-        <div class="card">
-          <div class="card-icon">💾</div>
+        <article class="application-card">
+
+          <span class="application-number">02</span>
+
           <h3>Electronics</h3>
+
           <p>
-            Cushioning solutions for hard drives, electronic
-            components and sensitive equipment.
+            Cushioning solutions for hard drives,
+            electronic components and other sensitive
+            products.
           </p>
-        </div>
+
+        </article>
 
 
-        <div class="card">
-          <div class="card-icon">📦</div>
+        <article class="application-card">
+
+          <span class="application-number">03</span>
+
           <h3>Fragile Goods</h3>
+
           <p>
             Flexible protection for products that require
-            additional cushioning during shipping.
+            additional cushioning during transportation.
           </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+
+  <section class="products" id="products">
+
+    <div class="container">
+
+      <div class="products-intro">
+
+        <div>
+
+          <div class="section-label">
+            03 / PRODUCTS
+          </div>
+
+          <h2>
+            Protective<br>
+            Packaging Solutions.
+          </h2>
+
+        </div>
+
+        <p class="products-description">
+          From standard protective packaging to customized
+          configurations, AMPI focuses on practical solutions
+          for different product sizes, shapes and shipping
+          requirements.
+        </p>
+
+      </div>
+
+
+      <div class="product-list">
+
+        <div class="product-item">
+
+          <div class="product-number">01</div>
+
+          <div>
+            <h3>Wine Bottle Air Column Bags</h3>
+            <p>
+              Protective packaging for wine,
+              spirits and glass bottles.
+            </p>
+          </div>
+
+          <a href="#contact" class="product-link">
+            Discuss Your Requirement →
+          </a>
+
         </div>
 
 
-        <div class="card">
-          <div class="card-icon">🛡</div>
-          <h3>Custom Solutions</h3>
-          <p>
-            Packaging configurations adapted to different
-            product sizes, shapes and protection needs.
-          </p>
+        <div class="product-item">
+
+          <div class="product-number">02</div>
+
+          <div>
+            <h3>Electronic Product Protection</h3>
+            <p>
+              Cushioning solutions for hard drives,
+              electronics and sensitive products.
+            </p>
+          </div>
+
+          <a href="#contact" class="product-link">
+            Discuss Your Requirement →
+          </a>
+
+        </div>
+
+
+        <div class="product-item">
+
+          <div class="product-number">03</div>
+
+          <div>
+            <h3>Air Column Packaging</h3>
+            <p>
+              Flexible protective packaging
+              configurations for different products.
+            </p>
+          </div>
+
+          <a href="#contact" class="product-link">
+            Discuss Your Requirement →
+          </a>
+
+        </div>
+
+
+        <div class="product-item">
+
+          <div class="product-number">04</div>
+
+          <div>
+            <h3>Custom Packaging Solutions</h3>
+            <p>
+              Packaging developed around product
+              dimensions and protection requirements.
+            </p>
+          </div>
+
+          <a href="#contact" class="product-link">
+            Discuss Your Requirement →
+          </a>
+
         </div>
 
       </div>
@@ -688,22 +941,30 @@
 
     <div class="container">
 
-      <div class="section-grid">
+      <div class="two-column">
 
         <div>
-          <div class="section-number">03 / WHY AMPI</div>
+
+          <div class="section-label">
+            04 / WHY AMPI
+          </div>
 
           <h2>
-            Why Work<br>
-            With AMPI?
+            Practical<br>
+            Solutions.<br>
+            Real Protection.
           </h2>
+
         </div>
 
-        <div>
-          <p class="section-text">
-            We focus on practical packaging solutions that balance
-            protection, flexibility and cost efficiency.
+        <div class="about-text">
+
+          <p>
+            We focus on packaging solutions that balance
+            product protection, flexibility and practical
+            customer requirements.
           </p>
+
         </div>
 
       </div>
@@ -712,43 +973,112 @@
       <div class="features">
 
         <div class="feature">
+
           <div class="feature-number">01</div>
+
           <h3>Flexible Customization</h3>
+
           <p>
-            Customized packaging solutions for different
-            product sizes, shapes and protection requirements.
+            Packaging solutions adapted to different
+            product sizes, shapes and protection needs.
           </p>
+
         </div>
 
 
         <div class="feature">
+
           <div class="feature-number">02</div>
+
           <h3>Reliable Quality</h3>
+
           <p>
-            Stable production and quality control help ensure
-            consistent packaging performance.
+            Stable production and quality control
+            support consistent packaging performance.
           </p>
+
         </div>
 
 
         <div class="feature">
+
           <div class="feature-number">03</div>
+
           <h3>Responsive Support</h3>
+
           <p>
-            Clear communication and practical support from
-            initial inquiry to after-sales service.
+            Clear communication from inquiry through
+            project development and delivery.
           </p>
+
         </div>
 
 
         <div class="feature">
+
           <div class="feature-number">04</div>
+
           <h3>Practical Solutions</h3>
+
           <p>
-            Efficient packaging solutions designed to create
-            real value for customers.
+            Packaging designed to create practical
+            value for customers and their products.
           </p>
+
         </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MANUFACTURING -->
+
+  <section class="manufacturing" id="manufacturing">
+
+    <div class="container manufacturing-grid">
+
+      <div class="manufacturing-placeholder">
+
+        <div>
+
+          <strong>AMPI Manufacturing</strong>
+
+          <p>
+            Real factory and production images
+            will be added here.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="manufacturing-text">
+
+        <div class="section-label">
+          05 / MANUFACTURING
+        </div>
+
+        <h2>
+          Built For<br>
+          Consistent<br>
+          Protection.
+        </h2>
+
+        <p>
+          AMPI works with production resources and quality
+          control processes to provide stable protective
+          packaging solutions for customers.
+        </p>
+
+        <p>
+          This section will later present real information
+          about materials, production capabilities,
+          quality control and customization.
+        </p>
 
       </div>
 
@@ -763,21 +1093,26 @@
 
     <div class="container">
 
-      <div class="section-number">04 / LET'S TALK</div>
+      <div class="section-label">
+        06 / LET'S TALK
+      </div>
 
       <h2>
-        Let's Find the Right
-        Packaging Solution.
+        Tell Us What<br>
+        You Need to Protect.
       </h2>
 
       <p>
-        Tell us about your product, packaging requirements and target
-        market. We can discuss a suitable air column packaging solution.
+        Tell us about your product, packaging requirements
+        and target market. We can discuss a suitable
+        protective packaging solution.
       </p>
 
-      <a href="mailto:info@ampireach.com"
-         class="button button-primary">
-        Send an Inquiry
+      <a
+        href="mailto:info@ampireach.com"
+        class="button button-primary"
+      >
+        Request a Quote
       </a>
 
     </div>
@@ -794,38 +1129,49 @@
     <div class="footer-grid">
 
       <div>
-        <div class="logo">
-          <span class="logo-mark"></span>
-          <span>AMPI</span>
-        </div>
 
-        <p class="footer-text">
-          Air column packaging solutions for safer,
-          smarter and more practical product protection.
+        <a href="/" class="footer-logo">
+          <img src="ampi-logo.png" alt="AMPI">
+        </a>
+
+        <p class="footer-description">
+          Air column packaging solutions for practical
+          product protection during storage,
+          handling and transportation.
         </p>
+
       </div>
 
 
       <div>
-        <div class="footer-title">Explore</div>
+
+        <div class="footer-title">
+          Explore
+        </div>
 
         <div class="footer-links">
           <a href="#about">About AMPI</a>
           <a href="#applications">Applications</a>
-          <a href="#why-ampi">Why AMPI</a>
+          <a href="#products">Products</a>
+          <a href="#manufacturing">Manufacturing</a>
         </div>
+
       </div>
 
 
       <div>
-        <div class="footer-title">Contact</div>
+
+        <div class="footer-title">
+          Contact
+        </div>
 
         <div class="footer-links">
+          <a href="#contact">Request a Quote</a>
           <a href="mailto:info@ampireach.com">
             info@ampireach.com
           </a>
-          <span>ampireach.com</span>
         </div>
+
       </div>
 
     </div>
